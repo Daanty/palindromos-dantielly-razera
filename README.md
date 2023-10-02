@@ -11,7 +11,7 @@ Git
 
 # Instalação
 Clone o repositório:
-git clone [URL_DO_REPOSITÓRIO]
+git clone do repositório
 
 Entre na pasta do projeto:
 cd caca_palindromo_h2_project
