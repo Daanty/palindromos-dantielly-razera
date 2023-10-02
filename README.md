@@ -30,4 +30,7 @@ O servidor deve iniciar na porta 8080 ou na porta especificada no arquivo applic
 Você pode testar a API usando curl, Postman ou qualquer outro cliente HTTP.
 curl -X POST http://localhost:8080/api/palindrome -d '{"matrix": "abc,def,ghi"}'
 
+# Cobertura de testes unitários utilizando SonarQube
+![image](https://github.com/Daanty/palindromos-dantielly-razera/assets/12103742/df43ea5f-06d4-4ad1-b08f-d5c669e0b94f)
+
 
