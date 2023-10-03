@@ -33,4 +33,6 @@ curl -X POST http://localhost:8080/api/palindrome -d '{"matrix": "abc,def,ghi"}'
 # Cobertura de testes unitários utilizando SonarQube
 ![image](https://github.com/Daanty/palindromos-dantielly-razera/assets/12103742/df43ea5f-06d4-4ad1-b08f-d5c669e0b94f)
 
+# Documentação da API
+Para acessar o Swagger/OpenAPI da API REST utilize a url: http://localhost:8080/swagger-ui.html após iniciar o servidor.
 
