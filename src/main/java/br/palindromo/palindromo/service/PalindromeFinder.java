@@ -12,7 +12,7 @@ public class PalindromeFinder {
     public List<String> findAllPalindromesInMatrix(String[][] stringMatrix) {
         List<String> palindromes = new ArrayList<>();
 
-        // Convert String[][] to char[][]
+        // Converte de String[][] para char[][]
         int rows = stringMatrix.length;
         int cols = stringMatrix[0].length;
         char[][] matrix = new char[rows][cols];
@@ -21,13 +21,13 @@ public class PalindromeFinder {
             for (int j = 0; j < cols; j++) {
                 String cell = stringMatrix[i][j];
                 if (cell == null || cell.length() != 1 || !Character.isLetter(cell.charAt(0))) {
-                    throw new IllegalArgumentException("Matrix should contain only single letters");
+                    throw new IllegalArgumentException("A Matriz so pode conter letras.");
                 }
                 matrix[i][j] = cell.charAt(0);
             }
         }
 
-        // Check horizontal palindromes
+        // Procura por palindromo na horizontal
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 StringBuilder sb = new StringBuilder();
@@ -41,7 +41,7 @@ public class PalindromeFinder {
             }
         }
 
-        // Check vertical palindromes
+        // Procura por palindromo na vertical
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
                 StringBuilder sb = new StringBuilder();
@@ -55,7 +55,7 @@ public class PalindromeFinder {
             }
         }
 
-        // Check diagonal palindromes (top-left to bottom-right)
+        // Procura por palindromo diagonal, esquerda superior para direta inferior
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 StringBuilder sb = new StringBuilder();
@@ -69,7 +69,7 @@ public class PalindromeFinder {
             }
         }
 
-        // Check diagonal palindromes (bottom-left to top-right)
+        // Procura por palindromo diagonal, esquerda inferior para direta superior
         for (int i = rows - 1; i >= 0; i--) {
             for (int j = 0; j < cols; j++) {
                 StringBuilder sb = new StringBuilder();
